@@ -1,0 +1,25 @@
+{
+  "name": "Seven JSON Viewer",
+  "description": "Minimal JSON Viewer with JSON Path",
+  "short_name": "JSON Viewer",
+  "version": "1.0",
+  "offline_enabled": true,
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["src.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "content_security_policy": "sandbox allow-scripts; script-src 'self'; object-src 'self'",
+  "permissions": ["tabs", "activeTab"],
+  "web_accessible_resources": ["index.html", "styles.css", "src.js"],
+  "icons": {
+    "16": "assets/icon-16.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png",
+    "512": "assets/icon-512.png"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "seven-json-viewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel public/index.html --out-dir build",
+    "build": "parcel build public/index.html --no-content-hash --out-dir dist --no-source-maps",
+    "clean": "rm -rf dist",
+    "build:flatten": "mv dist/src* dist/src.js && mv dist/styles* dist/styles.css",
+    "pack:chrome": "cp manifest.json dist/. && cp -r public/assets dist/. && zip -r chrome-dist.zip dist",
+    "pack": "npm run clean && npm run build && npm run build:flatten && npm run pack:chrome"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.96",
+    "jsonpath": "^1.0.2",
+    "jsonpath-plus": "^3.0.0",
+    "parcel-bundler": "^1.12.4",
+    "tslint": "^6.0.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "sass": "^1.25.0"
+  }
+}
