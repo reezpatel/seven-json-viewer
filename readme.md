@@ -24,13 +24,14 @@ Seven JSON is a chrome/chromium extension for displaying JSON response in browse
 
 | ![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)  | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png) |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Here](https://chrome.google.com/webstore/detail/seven-json-viewer/cfahdpkjihoomfomffdbmamapgdpohoe) | Coming SOon                                                                                 |
+| [Get It Here](https://chrome.google.com/webstore/detail/seven-json-viewer/cfahdpkjihoomfomffdbmamapgdpohoe) | Coming Soon                                                                                 |
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
 
-## Try It after Installing
+## Try it after installing
 
 https://jsonplaceholder.typicode.com/todos/1 1 todo
+
 https://jsonplaceholder.typicode.com/posts 100 posts
 
 ## License
