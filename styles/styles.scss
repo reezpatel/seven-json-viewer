@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Source Code Pro', monospace;
-  box-sizing: border-box;
-}
-
 :root {
   --bg-color: #1e1e1e;
   --accent-color: #00cc7d;
@@ -15,7 +8,12 @@
   --label-color: #569cd6;
 }
 
-$bgColor: #1e1e1e;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--bg-color);
