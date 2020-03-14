@@ -78,7 +78,6 @@
       "check-whitespace"
     ],
     "one-variable-per-declaration": true,
-    "quotemark": [true, "single", "avoid-escape", "jsx-single"],
     "semicolon": [true, "always"],
     "strict-type-predicates": true,
     "space-before-function-paren": [
