@@ -13,7 +13,7 @@ const getView = (label, value, isLast, isOpen) => {
     );
   }
 
-  if (typeof value === 'object') {
+  if (value !== null && typeof value === 'object') {
     return (
       <JObject label={label} value={value} isLast={isLast} isOpen={isOpen} />
     );

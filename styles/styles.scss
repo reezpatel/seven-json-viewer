@@ -6,6 +6,7 @@
   --number-color: #b5cea8;
   --boolean-color: #4ec9b0;
   --label-color: #569cd6;
+  --null-color: #7d8c93;
 }
 
 * {
@@ -84,6 +85,10 @@ body {
 
   .number {
     color: var(--number-color);
+  }
+
+  .null {
+    color: var(--null-color);
   }
 
   .block {

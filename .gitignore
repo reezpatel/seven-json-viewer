@@ -4,3 +4,5 @@ build/*
 *-dist.zip
 .vscode
 dist
+dist/*
+.DS_Store

@@ -2,7 +2,7 @@
   "name": "Seven JSON Viewer",
   "description": "Minimal JSON Viewer with JSON Path",
   "short_name": "JSON Viewer",
-  "version": "1.0",
+  "version": "2.1",
   "offline_enabled": true,
   "manifest_version": 2,
   "content_scripts": [
@@ -13,7 +13,7 @@
       "all_frames": true
     }
   ],
-  "content_security_policy": "sandbox allow-scripts; script-src 'self'; object-src 'self'; style-src-elem 'https://fonts.googleapis.com';",
+  "content_security_policy": "sandbox allow-scripts; script-src 'self'; object-src 'none';",
   "permissions": ["tabs", "activeTab"],
   "web_accessible_resources": ["styles.css", "app.js"],
   "icons": {

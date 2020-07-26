@@ -9,7 +9,11 @@ const JString = ({ label, value, isLast }) => {
           {': '}
         </React.Fragment>
       )}
-      <span className="string">"{value}"</span>
+      {value === null ? (
+        <span className="null">null</span>
+      ) : (
+        <span className="string">"{value}"</span>
+      )}
       {!isLast && ','}
     </section>
   );
