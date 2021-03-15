@@ -10,7 +10,7 @@ const JBlock = ({ children, collapsible, onArrowClick, active, copyData }) => {
   const events = React.useContext(EventContext);
 
   const handleSectionClick = (e: MouseEvent) => {
-    e.preventDefault();
+    // e.preventDefault();
     e.stopPropagation();
 
     setSelected(!selected);

@@ -3,6 +3,7 @@
   --accent-color: #00cc7d;
   --accent-color-light: #00cc7e69;
   --string-color: #d69d85;
+  --hyperlink-color: #43beee;
   --number-color: #b5cea8;
   --boolean-color: #4ec9b0;
   --label-color: #569cd6;
@@ -78,6 +79,14 @@ body {
   .string {
     color: var(--string-color);
   }
+
+  .hyperlink {
+    color: var(--hyperlink-color);
+  }
+
+  .hyperlink a{ 
+    color: var(--hyperlink-color);
+ }
 
   .boolean {
     color: var(--boolean-color);

@@ -15,7 +15,6 @@
     "@types/chrome": "^0.0.96",
     "jsonpath": "^1.0.2",
     "jsonpath-plus": "^3.0.0",
-    "parcel-bundler": "^1.12.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-icons": "^3.9.0",
@@ -24,6 +23,7 @@
     "typescript": "^3.7.5"
   },
   "devDependencies": {
+    "parcel-bundler": "^1.12.3",
     "sass": "^1.25.0"
   }
 }
