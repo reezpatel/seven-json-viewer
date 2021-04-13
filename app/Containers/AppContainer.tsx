@@ -6,7 +6,7 @@ const AppContainer = () => {
   const [jsonPath, setJsonPath] = React.useState('');
   const path = useDebounce(jsonPath, 500);
 
-  const handleJSONPathInput = e => {
+  const handleJSONPathInput = (e) => {
     setJsonPath(e.target.value);
   };
 

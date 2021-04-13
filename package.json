@@ -4,12 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel public/index.html --out-dir build",
-    "build": "parcel build public/index.html --no-content-hash --out-dir dist --no-source-maps",
+    "start:extension": "parcel public/index.html --out-dir build/extension",
+    "start:popup": "parcel popup/index.html --out-dir build/popup",
+    "build:extension": "parcel build public/index.html --experimental-scope-hoisting --no-content-hash --out-dir dist/extension --no-source-maps",
+    "build:popup": "parcel build popup/index.html --experimental-scope-hoisting --no-content-hash --out-dir dist/popup --no-source-maps",
     "clean": "rm -rf dist",
-    "build:flatten": "rm dist/*.html && mv dist/app* dist/app.js && mv dist/styles* dist/styles.css",
-    "pack:chrome": "cp manifest.json dist/. && cp -r public/assets dist/. && zip -r chrome-dist.zip dist",
-    "pack": "npm run clean && npm run build && npm run build:flatten && npm run pack:chrome"
+    "flatten:extension": "mv dist/extension/app* dist/app.js && mv dist/extension/styles* dist/styles.css",
+    "flatten:popup": "mv dist/popup/* dist/.",
+    "pack:chrome": "cp manifest.json dist/. && cp -r public/assets dist/. && cd dist && zip -r chrome-dist.zip .",
+    "build": "npm run build:extension && npm run build:popup",
+    "flatten": "npm run flatten:extension && npm run flatten:popup",
+    "pack": "npm run clean && npm run build && npm run flatten && npm run pack:chrome"
   },
   "dependencies": {
     "@types/chrome": "^0.0.96",
