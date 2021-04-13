@@ -4,7 +4,7 @@ import DeleteIcon from '../Icons/delete';
 import BookmarkIcon from '../Icons/bookmark';
 
 const AppContainer = () => {
-  const [activeTheme, setTheme] = React.useState('blush');
+  const [activeTheme, setTheme] = React.useState('dracula');
   const [isHistoryEnabled, setHistoryEnabled] = React.useState(true);
   const [history, setHistory] = React.useState([]);
 
