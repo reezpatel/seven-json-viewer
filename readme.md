@@ -12,6 +12,13 @@ Seven JSON is a chrome/chromium extension for displaying JSON response in browse
 
 ![Seven JSON Viewer](https://raw.githubusercontent.com/reezpatel/seven-json-viewer/master/listing/images/screen-1.png)
 
+## Roadmap
+
+- Save Responses
+- Compare other JSON
+- Unit Test
+- More Themes
+
 ## Features
 
 - Syntax Highlighting
